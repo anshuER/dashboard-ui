@@ -29,9 +29,9 @@ const IconMenu = () => {
       <IconButtonWrapper>
         <span className='sr-only'>Open user menu</span>
         <img
-          className='w-8 h-8 rounded-full'
+          class='lg:w-8 lg:h-8 h-7 w-7 rounded-full'
           src='https://flowbite.com/docs/images/people/profile-picture-5.jpg'
-          alt='user photo'
+          alt='Rounded avatar'
         />
       </IconButtonWrapper>
     </div>
