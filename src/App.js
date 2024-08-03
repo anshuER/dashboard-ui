@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import DashBoardLayout from './components/DashboardLayout';
+import StatusBar from './components/StatusBar';
+import ProfitCard from './components/ProfitCard';
+import Targets from './components/Targets';
+import Activity from './components/Activity';
+import RecentOrder from './components/RecentOrder';
+import CustomerFeedback from './components/CustomerFeedback';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DashBoardLayout>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-4 h-auto lg:h-40'>
+        <StatusBar />
+        <ProfitCard />
+      </div>
+
+      <div className='grid  md:grid-cols-3 gap-4 h-auto'>
+        <Activity />
+        <Targets />
+      </div>
+
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+        <RecentOrder />
+        <CustomerFeedback />
+      </div>
+    </DashBoardLayout>
   );
 }
 
