@@ -68,7 +68,7 @@ const dummyData = [
 const OrderTable = () => {
   return (
     <div class='relative overflow-x-auto shadow-md sm:rounded-lg'>
-      <table class='w-full text-[10px] lg:text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'>
+      <table class='w-full text-[10px] lg:text-sm text-left rtl:text-right text-gray-400'>
         <thead class=' text-white font-bold'>
           <tr>
             {headers.map((name) => (
@@ -81,12 +81,12 @@ const OrderTable = () => {
         <tbody>
           {dummyData.map((data, index) => (
             <tr
-              class='bg-white border-b dark:bg-gray-800 font-light text-white dark:border-gray-700'
+              class=' border-b bg-gray-800 font-light text-white border-gray-700'
               key={index}
             >
               <th
                 scope='row'
-                class='px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white'
+                class='px-6 py-4 font-bold  whitespace-nowrap text-white'
               >
                 {data.customer}
               </th>
